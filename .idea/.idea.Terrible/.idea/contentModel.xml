@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\JLabarca\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\JLabarca\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_Terrible.454552887.00" t="ExcludeRecursive" />
+    <e p="E:\Git\JLabarca\Terrible" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="DefaultPlayables" t="Include">
+          <e p="Editor" t="Include">
+            <e p="TimelinePlayableWizard.cs" t="Include" />
+          </e>
+          <e p="LightControl" t="Include">
+            <e p="Editor" t="Include">
+              <e p="LightControlDrawer.cs" t="Include" />
+            </e>
+            <e p="LightControlBehaviour.cs" t="Include" />
+            <e p="LightControlClip.cs" t="Include" />
+            <e p="LightControlMixerBehaviour.cs" t="Include" />
+            <e p="LightControlTrack.cs" t="Include" />
+          </e>
+          <e p="NavMeshAgentControl" t="Include">
+            <e p="NavMeshAgentControlBehaviour.cs" t="Include" />
+            <e p="NavMeshAgentControlClip.cs" t="Include" />
+            <e p="NavMeshAgentControlMixerBehaviour.cs" t="Include" />
+            <e p="NavMeshAgentControlTrack.cs" t="Include" />
+          </e>
+          <e p="ScreenFader" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ScreenFaderDrawer.cs" t="Include" />
+            </e>
+            <e p="ScreenFaderBehaviour.cs" t="Include" />
+            <e p="ScreenFaderClip.cs" t="Include" />
+            <e p="ScreenFaderMixerBehaviour.cs" t="Include" />
+            <e p="ScreenFaderTrack.cs" t="Include" />
+          </e>
+          <e p="TextSwitcher" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TextSwitcherDrawer.cs" t="Include" />
+            </e>
+            <e p="TextSwitcherBehaviour.cs" t="Include" />
+            <e p="TextSwitcherClip.cs" t="Include" />
+            <e p="TextSwitcherMixerBehaviour.cs" t="Include" />
+            <e p="TextSwitcherTrack.cs" t="Include" />
+          </e>
+          <e p="TimeDilation" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TimeDilationDrawer.cs" t="Include" />
+            </e>
+            <e p="TimeDilationBehaviour.cs" t="Include" />
+            <e p="TimeDilationClip.cs" t="Include" />
+            <e p="TimeDilationMixerBehaviour.cs" t="Include" />
+            <e p="TimeDilationTrack.cs" t="Include" />
+          </e>
+          <e p="TransformTween" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TransformTweenDrawer.cs" t="Include" />
+            </e>
+            <e p="TransformTweenBehaviour.cs" t="Include" />
+            <e p="TransformTweenClip.cs" t="Include" />
+            <e p="TransformTweenMixerBehaviour.cs" t="Include" />
+            <e p="TransformTweenTrack.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="ReplaceSelection.cs" t="Include" />
+        </e>
+        <e p="GameAssets" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="CameraDistance.shader" t="Include" />
+            <e p="Silhouette.shader" t="Include" />
+            <e p="Transparent-AlphaBlend Rim.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Commands" t="Include">
+            <e p="Command.cs" t="Include" />
+          </e>
+          <e p="CustomTimelineTracks" t="Include">
+            <e p="AICommand" t="Include">
+              <e p="AICommandBehaviour.cs" t="Include" />
+              <e p="AICommandClip.cs" t="Include" />
+              <e p="AICommandMixerBehaviour.cs" t="Include" />
+              <e p="AICommandTrack.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="AICommandInspector.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Dialogue" t="Include">
+              <e p="DialogueBehaviour.cs" t="Include" />
+              <e p="DialogueClip.cs" t="Include" />
+              <e p="DialogueTrack.cs" t="Include" />
+            </e>
+            <e p="Light" t="Include">
+              <e p="Editor" t="Include">
+                <e p="LightDrawer.cs" t="Include" />
+              </e>
+              <e p="LightBehaviour.cs" t="Include" />
+              <e p="LightClip.cs" t="Include" />
+              <e p="LightMixerBehaviour.cs" t="Include" />
+              <e p="LightTrack.cs" t="Include" />
+            </e>
+            <e p="SimpleClip" t="Include">
+              <e p="SimpleBehaviour.cs" t="Include" />
+              <e p="SimpleClip.cs" t="Include" />
+            </e>
+            <e p="TimeMachine" t="Include">
+              <e p="Editor" t="Include">
+                <e p="TimeMachineClipInspector.cs" t="Include" />
+              </e>
+              <e p="TimeMachineBehaviour.cs" t="Include" />
+              <e p="TimeMachineClip.cs" t="Include" />
+              <e p="TimeMachineMixerBehaviour.cs" t="Include" />
+              <e p="TimeMachineTrack.cs" t="Include" />
+            </e>
+            <e p="TMPTextSwitcher" t="Include">
+              <e p="Editor" t="Include">
+                <e p="TMPTextSwitcherDrawer.cs" t="Include" />
+              </e>
+              <e p="TMPTextSwitcherBehaviour.cs" t="Include" />
+              <e p="TMPTextSwitcherClip.cs" t="Include" />
+              <e p="TMPTextSwitcherMixerBehaviour.cs" t="Include" />
+              <e p="TMPTextSwitcherTrack.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GameStartup.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
+          <e p="New" t="Include">
+            <e p="Actor" t="Include">
+              <e p="ActorComponent.cs" t="Include" />
+              <e p="ActorInstructionSystem.cs" t="Include" />
+              <e p="ActorsInitSystem.cs" t="Include" />
+              <e p="ActorSpawnEvent.cs" t="Include" />
+              <e p="ActorSpawnSystem.cs" t="Include" />
+              <e p="ActorStateSystem.cs" t="Include" />
+              <e p="DeadActorsSystem.cs" t="Include" />
+            </e>
+            <e p="Command" t="Include">
+              <e p="AsyncCommand.cs" t="Include" />
+              <e p="Command.cs" t="Include" />
+              <e p="CommandSystem.cs" t="Include" />
+              <e p="MoveCommand.cs" t="Include" />
+            </e>
+            <e p="Monobehaviours" t="Include">
+              <e p="ActorView.cs" t="Include" />
+            </e>
+            <e p="Nav" t="Include">
+              <e p="DynamicNavSystem.cs" t="Include" />
+              <e p="NavigationComponent.cs" t="Include" />
+            </e>
+            <e p="PlayerInput" t="Include">
+              <e p="ActorSelectionSystem.cs" t="Include" />
+              <e p="ClickMoveSystem.cs" t="Include" />
+              <e p="DebugInputsSystem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Old" t="Include">
+            <e p="Managers" t="Include">
+              <e p="CameraManager.cs" t="Include" />
+              <e p="GameManager.cs" t="Include" />
+              <e p="InputManager.cs" t="Include" />
+              <e p="Singleton.cs" t="Include" />
+              <e p="UIManager.cs" t="Include" />
+            </e>
+            <e p="RTS" t="Include">
+              <e p="ActorTemplate.cs" t="Include" />
+              <e p="AICommand.cs" t="Include" />
+              <e p="Platoon.cs" t="Include" />
+              <e p="Unit.cs" t="Include" />
+            </e>
+            <e p="Utilities" t="Include">
+              <e p="DemoScript.cs" t="Include" />
+              <e p="FollowObject.cs" t="Include" />
+              <e p="FramesPerSecond.cs" t="Include" />
+              <e p="LightningStrike.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Pooling" t="Include">
+            <e p="ActorsPool.cs" t="Include" />
+            <e p="GenericObjectPool.cs" t="Include" />
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="Configuration.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="MenganoSpriteShader.shader" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Terrible.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

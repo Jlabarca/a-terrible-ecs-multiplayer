@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057696cd54634690b6243d44d5775196, type: 3}
+  m_Name: New Configuration
+  m_EditorClassIdentifier: 
+  actorView: {fileID: -6387252795294543897, guid: 448894f82390f3a4fa2d79c4940e59cc,
+    type: 3}

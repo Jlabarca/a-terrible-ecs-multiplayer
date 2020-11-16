@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15015083-2f86-4415-930e-32591c61227d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/Managers/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorsInitSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorInstructionSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/PlayerInput/ClickMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/RTS/Unit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/TimeMachineMixerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@e77aebcf29/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pooling/ActorsPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/RTS/ActorTemplate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorSpawnSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/PlayerInput/ActorSelectionSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/Editor/TimeMachineClipInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/PlayerInput/DebugInputsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Configuration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/RTS/AICommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DefaultPlayables/TimeDilation/TimeDilationTrack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/RTS/Platoon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/DeadActorsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorSpawnEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pooling/GenericObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@e77aebcf29/src/EcsFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Nav/DynamicNavSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs-unityintegration@47a1a8ea26/Runtime/EditorHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../others/open-project-1/UOP1_Project/Assets/Scripts/StateMachine/ScriptableObjects/StateConditionSO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/51/e9003064/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorStateSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/TimeMachineBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DefaultPlayables/Editor/TimelinePlayableWizard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/TimeMachineClip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@e77aebcf29/src/EcsEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Monobehaviours/ActorView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandMixerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandTrack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Command/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandClip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Command/CommandSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DefaultPlayables/LightControl/LightControlBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Nav/NavigationComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameStartup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/Dialogue/DialogueBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameAssets/Shaders/CameraDistance.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Old/Managers/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Configuration.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pooling/GenericObjectPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorSpawnEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/RemoveDeadActorsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/DeadActorsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/PlayerInput/ActorSelectionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Old/RTS/AICommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Old/RTS/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Old/RTS/Platoon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Old/Managers/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Old/Managers/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorInstructionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Old/Managers/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/Dialogue/DialogueBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/TimeMachineBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/TimeMachineClip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/TimeMachine/TimeMachineMixerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandClip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandTrack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandMixerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorStateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Monobehaviours/ActorView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/PlayerInput/DebugInputsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Nav/NavigationComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Actor/ActorsInitSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Command/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/New/Nav/DynamicNavSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameStartup.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameAssets/Shaders/CameraDistance.shader" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jZcwAhKMaAZkxUuxrJq4SbKolx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15015083-2f86-4415-930e-32591c61227d" name="Default Changelist" comment="" />
+      <created>1604015291629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604015291629</updated>
+      <workItem from="1604015299582" duration="447000" />
+      <workItem from="1604015912604" duration="3057000" />
+      <workItem from="1604027621885" duration="18032000" />
+      <workItem from="1604211488760" duration="8568000" />
+      <workItem from="1605133792022" duration="1219000" />
+      <workItem from="1605142633436" duration="922000" />
+      <workItem from="1605618483299" duration="1231000" />
+      <workItem from="1606595443985" duration="332000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1604016098736">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604016098736" />
+    <state x="627" y="253" width="666" height="534" key="find.popup" timestamp="1604345269787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="253" width="666" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604345269787" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604040771053">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604040771053" />
+  </component>
+</project>
