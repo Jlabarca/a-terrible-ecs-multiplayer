@@ -1,5 +1,5 @@
 ﻿using System;
-using New.Monobehaviours;
+using LeoECS.Monobehaviours;
 using UnityEngine;
 
 [Serializable]
