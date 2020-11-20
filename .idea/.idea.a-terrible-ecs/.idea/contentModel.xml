@@ -78,6 +78,7 @@
           <e p="Commands" t="Include">
             <e p="Command.cs" t="Include" />
           </e>
+          <e p="CommandsManager.cs" t="Include" />
           <e p="CustomTimelineTracks" t="Include">
             <e p="AICommand" t="Include">
               <e p="AICommandBehaviour.cs" t="Include" />
@@ -125,24 +126,22 @@
               <e p="TMPTextSwitcherTrack.cs" t="Include" />
             </e>
           </e>
-          <e p="GameStartup.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
           <e p="LeoECS" t="Include">
             <e p="Actor" t="Include">
               <e p="ActorComponent.cs" t="Include" />
-              <e p="ActorInstructionSystem.cs" t="Include" />
               <e p="ActorsInitSystem.cs" t="Include" />
               <e p="ActorSpawnEvent.cs" t="Include" />
               <e p="ActorSpawnSystem.cs" t="Include" />
-              <e p="ActorStateSystem.cs" t="Include" />
               <e p="DeadActorsSystem.cs" t="Include" />
             </e>
             <e p="Command" t="Include">
               <e p="AsyncCommand.cs" t="Include" />
-              <e p="Command.cs" t="Include" />
+              <e p="CommandComponent.cs" t="Include" />
               <e p="CommandSystem.cs" t="Include" />
               <e p="MoveCommand.cs" t="Include" />
             </e>
+            <e p="GameStartup.cs" t="Include" />
             <e p="Monobehaviours" t="Include">
               <e p="ActorView.cs" t="Include" />
             </e>
