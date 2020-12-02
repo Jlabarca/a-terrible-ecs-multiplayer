@@ -1,4 +1,4 @@
-﻿using LeoECS.Actor;
+﻿using LeoECS.Unit;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -27,17 +27,17 @@ namespace LeoECS.PlayerInput
                 for (int i = 0; i < 100; i++)
                 {
                     var actorEntity = _world.NewEntity();
-                    // ref var actorComponent = ref actorEntity.Get<ActorComponent>();
+                    // ref var actorComponent = ref actorEntity.Get<UnitComponent>();
                     // actorComponent.hp = 101;
                     // actorComponent.spawnPosition = hit.point;
                     actorEntity
-                        .Replace( new ActorComponent
+                        .Replace( new UnitComponent
                         {
                             Hp = 101,
                             SpawnPosition = hit.point,
                         });
                 }
-                //actorEntity.Get<ActorSpawnEvent>();
+                //actorEntity.Get<UnitSpawnCommand>();
             }
 
 

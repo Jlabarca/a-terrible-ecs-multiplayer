@@ -1,9 +1,9 @@
-﻿using LeoECS.Actor;
-using LeoECS.Command;
+﻿using LeoECS.Command;
 using LeoECS.Nav;
 using LeoECS.PlayerInput;
 using LeoECS.Pooling;
 using LeoECS.ScriptableObjects;
+using LeoECS.Unit;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ namespace LeoECS
         [SerializeField]
         private GameState gameState;
         public Configuration configuration;
-        private ActorsPool actorsPool;
+        private UnitsPool unitsPool;
 
         private void OnEnable()
         {
@@ -28,8 +28,8 @@ namespace LeoECS
             systems = new EcsSystems(ecsWorld);
             random = new System.Random(1);
             gameState = new GameState();
-            actorsPool = gameObject.GetComponent<ActorsPool>();
-            actorsPool.Prewarm(1000, configuration.actorView);
+            unitsPool = gameObject.GetComponent<UnitsPool>();
+            unitsPool.Prewarm(1000, configuration.unitView);
 
 #if UNITY_EDITOR
             Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create(ecsWorld);
@@ -37,17 +37,17 @@ namespace LeoECS
 #endif
 
             systems
-                .Add(new ActorsInitSystem())
-                .Add(new ActorSpawnSystem())
+                .Add(new UnitsInitSystem())
+                .Add(new UnitSpawnSystem())
                 .Add(new CommandSystem())
                 .Add(new ClickMoveSystem())
-                .Add(new ActorSelectionSystem())
+                .Add(new UnitSelectionSystem())
                 .Add(new DebugInputsSystem())
                 .Add(new DynamicNavSystem())
-                .OneFrame<ActorSpawnEvent>()
+                .OneFrame<UnitSpawnCommand>()
                 .Inject(gameState)
                 .Inject(configuration)
-                .Inject(actorsPool)
+                .Inject(unitsPool)
                 .Init();
         }
 

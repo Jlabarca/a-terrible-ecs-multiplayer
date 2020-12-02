@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace LeoECS.Monobehaviours
 {
-    public class ActorView : MonoBehaviour
+    public class UnitView : MonoBehaviour
     {
         public EcsEntity Entity;
 		public ActorTemplate template;
@@ -13,7 +13,7 @@ namespace LeoECS.Monobehaviours
 		private Animator animator;
 		private SpriteRenderer selectionCircle;
 
-		public UnityAction<ActorView> OnDie;
+		public UnityAction<UnitView> OnDie;
 
 		void Awake ()
 		{

@@ -1,11 +1,11 @@
-﻿using LeoECS.Actor;
-using LeoECS.Nav;
+﻿using LeoECS.Nav;
+using LeoECS.Unit;
 using Leopotam.Ecs;
 using UnityEngine;
 
 namespace LeoECS.PlayerInput
 {
-    public class ActorSelectionSystem : IEcsRunSystem
+    public class UnitSelectionSystem : IEcsRunSystem
     {
         private GameState gameState;
         private readonly LayerMask unitsLayerMask = LayerMask.GetMask("Units");
@@ -16,7 +16,7 @@ namespace LeoECS.PlayerInput
         private bool lmbClickedDown;
         private bool boxSelectionInitiated;
         private float timeOfClick;
-        private EcsFilter<ActorComponent, NavigationComponent> _actors;
+        private EcsFilter<UnitComponent, NavigationComponent> _actors;
 
 
         private const float CLICK_TOLERANCE = .5f; //the player has this time to release the mouse button for it to be registered as a click
@@ -64,7 +64,7 @@ namespace LeoECS.PlayerInput
 					{
 						var actorComponent = _actors.Get1(actorIndex);
 						if(actorComponent.Hp < 1) return;
-						Vector2 screenPos = Camera.main.WorldToScreenPoint(actorComponent.ActorView.transform.position);
+						Vector2 screenPos = Camera.main.WorldToScreenPoint(actorComponent.unitView.transform.position);
 						if(selectionRect.Contains(screenPos)) {
 							gameState.selectedActors.Add(_actors.Get2(actorIndex).navMeshAgent);
 							//GameManager.Instance.AddToSelection(allSelectables[i], false);

@@ -1,14 +1,14 @@
 ﻿using LeoECS.Pooling;
 using Leopotam.Ecs;
 
-namespace LeoECS.Actor
+namespace LeoECS.Unit
 {
-    public class DeadActorsSystem : IEcsRunSystem
+    public class DeadUnitsSystem : IEcsRunSystem
     {
         private GameState gameState;
-        private ActorsPool actorsPool;
+        private UnitsPool unitsPool;
 
-        private EcsFilter<ActorComponent> _actors;
+        private EcsFilter<UnitComponent> _actors;
         private const int  DeathExpirationTime = 1500;
 
         public void Run()
@@ -30,8 +30,8 @@ namespace LeoECS.Actor
                     {
                         var entity = _actors.GetEntity(index);
                         //if(_actors.GetEntity(index).Has<>())
-                        if(actorComponent.ActorView != null)
-                            actorsPool.ReturnToPool(actorComponent.ActorView);
+                        if(actorComponent.unitView != null)
+                            unitsPool.ReturnToPool(actorComponent.unitView);
 
                         entity.Destroy();
                     }

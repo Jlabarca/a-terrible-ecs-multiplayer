@@ -1,11 +1,12 @@
 ﻿using LeoECS.Monobehaviours;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace LeoECS.ScriptableObjects
 {
     [CreateAssetMenu]
     public class Configuration : ScriptableObject
     {
-        public ActorView actorView;
+        [FormerlySerializedAs("actorView")] public UnitView unitView;
     }
 }

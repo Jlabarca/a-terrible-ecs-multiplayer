@@ -1,4 +1,4 @@
-﻿using LeoECS.Actor;
+﻿using LeoECS.Unit;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ namespace LeoECS.Nav
 {
     public class DynamicNavSystem : IEcsRunSystem
     {
-        private EcsFilter<ActorComponent, NavigationComponent> _actors;
+        private EcsFilter<UnitComponent, NavigationComponent> _actors;
 
         public void Run()
         {
@@ -17,7 +17,7 @@ namespace LeoECS.Nav
                 if (!navMeshAgent.isStopped)
                 {
                     var actorComponent = _actors.Get1(index);
-                    if (Vector3.Distance(actorComponent.ActorView.transform.position, navMeshAgent.destination) < 2
+                    if (Vector3.Distance(actorComponent.unitView.transform.position, navMeshAgent.destination) < 2
                     //&& navMeshAgent.radius < 0.5f
                     && navMeshAgent.stoppingDistance < 4)
                     {

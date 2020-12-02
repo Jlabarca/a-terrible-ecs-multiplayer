@@ -3,30 +3,30 @@ using LeoECS.Pooling;
 using Leopotam.Ecs;
 using UnityEngine.AI;
 
-namespace LeoECS.Actor
+namespace LeoECS.Unit
 {
-    public class ActorSpawnSystem : IEcsRunSystem
+    public class UnitSpawnSystem : IEcsRunSystem
     {
 
         private EcsWorld world;
-        private ActorsPool actorsPool;
+        private UnitsPool unitsPool;
 
-        private EcsFilter<ActorSpawnEvent, ActorComponent> _filter;
-        private EcsFilter<ActorComponent>.Exclude<NavigationComponent> _filter0;
+        private EcsFilter<UnitSpawnCommand, UnitComponent> _filter;
+        private EcsFilter<UnitComponent>.Exclude<NavigationComponent> _filter0;
 
         public void Run()
         {
             foreach (var index in _filter0)
             {
-                _filter0.GetEntity(index).Get<ActorSpawnEvent>();
+                _filter0.GetEntity(index).Get<UnitSpawnCommand>();
             }
 
             foreach (var index in _filter)
             {
                 ref var actorComponent = ref _filter.Get2(index);
-                var actorView = actorsPool.Get();
+                var actorView = unitsPool.Get();
                 actorView.transform.position = actorComponent.SpawnPosition;
-                actorComponent.ActorView = actorView;
+                actorComponent.unitView = actorView;
 
                 //if (entity.Has<NavigationComponent>())
                 var entity = _filter.GetEntity(index);

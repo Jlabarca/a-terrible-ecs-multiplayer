@@ -4,24 +4,24 @@ using Leopotam.Ecs;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace LeoECS.Actor
+namespace LeoECS.Unit
 {
-    public class ActorsInitSystem : IEcsInitSystem
+    public class UnitsInitSystem : IEcsInitSystem
     {
         private EcsWorld _world;
 
         public void Init()
         {
-            Debug.Log("ActorsInitSystem");
+            Debug.Log("UnitsInitSystem");
             var playerObjects = GameObject.FindGameObjectsWithTag("Locals");
             foreach (var actor in playerObjects) {
                 var actorEntity = _world.NewEntity();
                 actorEntity
-                    .Replace(new ActorComponent
+                    .Replace(new UnitComponent
                     {
                         Hp = 100,
                         SpawnPosition = actor.transform.position,
-                        ActorView = actor.GetComponent<ActorView>()
+                        unitView = actor.GetComponent<UnitView>()
                     });
 
                 if(actor.TryGetComponent<NavMeshAgent>(out var navMeshAgent))

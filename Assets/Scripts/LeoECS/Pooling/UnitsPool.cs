@@ -1,16 +1,16 @@
-﻿using LeoECS.Actor;
-using LeoECS.Monobehaviours;
+﻿using LeoECS.Monobehaviours;
 using LeoECS.Nav;
+using LeoECS.Unit;
 using Leopotam.Ecs;
 
 namespace LeoECS.Pooling
 {
-    public class ActorsPool : GenericObjectPool<ActorView>
+    public class UnitsPool : GenericObjectPool<UnitView>
     {
-        public override void ReturnToPool(ActorView objectToReturn)
+        public override void ReturnToPool(UnitView objectToReturn)
         {
             var entity = objectToReturn.Entity;
-            entity.Del<ActorComponent>();
+            entity.Del<UnitComponent>();
             //entity.Del<ActorViewRef>();
             entity.Del<NavigationComponent>();
             base.ReturnToPool(objectToReturn);
