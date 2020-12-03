@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LeoECS.unity
+    guid: 793ef0d1976261a4e84ca5bd2fded2de
   m_configObjects: {}
