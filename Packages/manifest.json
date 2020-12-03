@@ -40,6 +40,7 @@
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
 	"com.leopotam.ecs": "https://github.com/Leopotam/ecs.git",
-	"com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git"
+	"com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git",
+    "com.pixeye.ecs": "https://github.com/PixeyeHQ/actors.unity.git"
   }
 }
