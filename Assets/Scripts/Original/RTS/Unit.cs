@@ -7,7 +7,7 @@
 //
 // public class Unit : MonoBehaviour
 // {
-// 	public ActorState state = ActorState.Idle;
+// 	public UnitState state = UnitState.Idle;
 // 	public ActorTemplate template;
 //
 // 	//references
@@ -55,21 +55,21 @@
 //
 // 		switch(state)
 // 		{
-// 			case ActorState.MovingToSpotIdle:
+// 			case UnitState.MovingToSpotIdle:
 // 				if(navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance + .1f)
 // 				{
 // 					Stop();
 // 				}
 // 				break;
 //
-// 			case ActorState.MovingToSpotGuard:
+// 			case UnitState.MovingToSpotGuard:
 // 				if(navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance + .1f)
 // 				{
 // 					Guard();
 // 				}
 // 				break;
 //
-// 			case ActorState.MovingToTarget:
+// 			case UnitState.MovingToTarget:
 // 				//check if target has been killed by somebody else
 // 				if(IsDeadOrNull(targetOfAttack))
 // 				{
@@ -91,7 +91,7 @@
 //
 // 				break;
 //
-// 			case ActorState.Guarding:
+// 			case UnitState.Guarding:
 // 				if(Time.time > lastGuardCheckTime + guardCheckInterval)
 // 				{
 // 					lastGuardCheckTime = Time.time;
@@ -102,7 +102,7 @@
 // 					}
 // 				}
 // 				break;
-// 			case ActorState.Attacking:
+// 			case UnitState.Attacking:
 // 				//check if target has been killed by somebody else
 // 				if(IsDeadOrNull(targetOfAttack))
 // 				{
@@ -124,7 +124,7 @@
 //
 // 	public void ExecuteCommand(AICommand c)
 // 	{
-// 		if(state == ActorState.Dead)
+// 		if(state == UnitState.Dead)
 // 		{
 // 			//already dead
 // 			return;
@@ -157,7 +157,7 @@
 // 	//move to a position and be idle
 // 	private void GoToAndIdle(Vector3 location)
 // 	{
-// 		state = ActorState.MovingToSpotIdle;
+// 		state = UnitState.MovingToSpotIdle;
 // 		targetOfAttack = null;
 // 		isReady = false;
 //
@@ -168,7 +168,7 @@
 // 	//move to a position and be guarding
 // 	private void GoToAndGuard(Vector3 location)
 // 	{
-// 		state = ActorState.MovingToSpotGuard;
+// 		state = UnitState.MovingToSpotGuard;
 // 		targetOfAttack = null;
 // 		isReady = false;
 //
@@ -179,7 +179,7 @@
 // 	//stop and stay Idle
 // 	private void Stop()
 // 	{
-// 		state = ActorState.Idle;
+// 		state = UnitState.Idle;
 // 		targetOfAttack = null;
 // 		isReady = false;
 //
@@ -190,7 +190,7 @@
 // 	//stop but watch for enemies nearby
 // 	public void Guard()
 // 	{
-// 		state = ActorState.Guarding;
+// 		state = UnitState.Guarding;
 // 		targetOfAttack = null;
 // 		isReady = false;
 //
@@ -203,7 +203,7 @@
 // 	{
 // 		if(!IsDeadOrNull(target))
 // 		{
-// 			state = ActorState.MovingToTarget;
+// 			state = UnitState.MovingToTarget;
 // 			targetOfAttack = target;
 // 			isReady = false;
 //
@@ -223,7 +223,7 @@
 // 		//somebody might have killed the target while this Unit was approaching it
 // 		if(!IsDeadOrNull(targetOfAttack))
 // 		{
-// 			state = ActorState.Attacking;
+// 			state = UnitState.Attacking;
 // 			isReady = false;
 // 			navMeshAgent.isStopped = true;
 // 			StartCoroutine(DealAttack());
@@ -252,7 +252,7 @@
 //
 // 			}
 //
-// 			if(state == ActorState.Dead)
+// 			if(state == UnitState.Dead)
 // 			{
 // 				yield break;
 // 			}
@@ -266,7 +266,7 @@
 //
 //
 // 		//only move into Guard if the attack was interrupted (dead target, etc.)
-// 		if(state == ActorState.Attacking)
+// 		if(state == UnitState.Attacking)
 // 		{
 // 			Guard();
 // 		}
@@ -275,7 +275,7 @@
 // 	//called by an attacker
 // 	private void SufferAttack(int damage)
 // 	{
-// 		if(state == ActorState.Dead)
+// 		if(state == UnitState.Dead)
 // 		{
 // 			//already dead
 // 			return;
@@ -293,7 +293,7 @@
 // 	//called in SufferAttack, but can also be from a Timeline clip
 // 	private void Die()
 // 	{
-// 		state = ActorState.Dead; //still makes sense to set it, because somebody might be interacting with this script before it is destroyed
+// 		state = UnitState.Dead; //still makes sense to set it, because somebody might be interacting with this script before it is destroyed
 // 		animator.SetTrigger("DoDeath");
 //
 // 		//Remove itself from the selection Platoon
@@ -320,7 +320,7 @@
 //
 // 	private bool IsDeadOrNull(Unit u)
 // 	{
-// 		return (u == null || u.state == ActorState.Dead);
+// 		return (u == null || u.state == UnitState.Dead);
 // 	}
 //
 // 	private Unit GetNearestHostileUnit()
@@ -358,7 +358,7 @@
 // 		selectionCircle.color = newColor;
 // 	}
 //
-// 	public enum ActorState
+// 	public enum UnitState
 // 	{
 // 		Idle,
 // 		Guarding,

@@ -6,7 +6,7 @@
 // [Serializable]
 // public class Platoon : MonoBehaviour
 // {
-// 	public List<ActorView> units;
+// 	public List<UnitView> units;
 //
 // 	private Vector3[] tempPositions; //an array to do position calculations, doesn't necessary represent the position of the units at the moment
 // 	private float formationOffset = 3f;
@@ -36,14 +36,14 @@
 // 		}
 // 	}
 //
-// 	public void AddUnit(ActorView unitToAdd)
+// 	public void AddUnit(UnitView unitToAdd)
 // 	{
 // 		unitToAdd.OnDie += UnitDeadHandler;
 // 		units.Add(unitToAdd);
 // 	}
 //
 // 	//Adds an array of Units to the Platoon, and returns the new length
-// 	public int AddUnits(ActorView[] unitsToAdd)
+// 	public int AddUnits(UnitView[] unitsToAdd)
 // 	{
 // 		for(int i=0; i<unitsToAdd.Length; i++)
 // 		{
@@ -53,8 +53,8 @@
 // 		return units.Count;
 // 	}
 //
-// 	//Removes an ActorView from the Platoon and returns if the operation was successful
-// 	public bool RemoveUnit(ActorView unitToRemove)
+// 	//Removes an UnitView from the Platoon and returns if the operation was successful
+// 	public bool RemoveUnit(UnitView unitToRemove)
 // 	{
 // 		bool isThere = units.Contains(unitToRemove);
 //
@@ -124,7 +124,7 @@
 // 		for(int i=0; i<units.Count; i++)
 // 		{
 // 			if(units[i] != null
-// 				&& units[i].state != ActorView.ActorState.Dead)
+// 				&& units[i].state != UnitView.UnitState.Dead)
 // 			{
 // 				allDead = false;
 // 				break;
@@ -135,7 +135,7 @@
 // 	}
 //
 // 	//Fired when a unit belonging to this Platoon dies
-// 	private void UnitDeadHandler(ActorView whoDied)
+// 	private void UnitDeadHandler(UnitView whoDied)
 // 	{
 // 		RemoveUnit(whoDied); //will also remove the handler
 // 	}

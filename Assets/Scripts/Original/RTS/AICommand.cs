@@ -8,9 +8,9 @@ public class AICommand
 	public CommandType commandType;
 
 	public Vector3 destination;
-	public ActorView target;
+	public UnitView target;
 
-	public AICommand(CommandType ty, Vector3 v, ActorView ta)
+	public AICommand(CommandType ty, Vector3 v, UnitView ta)
 	{
 		commandType = ty;
 		destination = v;
@@ -23,7 +23,7 @@ public class AICommand
 		destination = v;
 	}
 
-	public AICommand(CommandType ty, ActorView ta)
+	public AICommand(CommandType ty, UnitView ta)
 	{
 		commandType = ty;
 		target = ta;
