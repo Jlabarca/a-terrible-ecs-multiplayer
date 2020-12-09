@@ -17,11 +17,11 @@ namespace LeoECS.Nav
                 if (!navMeshAgent.isStopped)
                 {
                     var actorComponent = _actors.Get1(index);
-                    if (Vector3.Distance(actorComponent.unitView.transform.position, navMeshAgent.destination) < 2
+                    if (Vector3.Distance(actorComponent.unitView.transform.position, navMeshAgent.destination) < 4
                     //&& navMeshAgent.radius < 0.5f
                     && navMeshAgent.stoppingDistance < 4)
                     {
-                        navMeshAgent.radius += 0.0035f;
+                        navMeshAgent.radius += 0.0055f;
                         navMeshAgent.stoppingDistance += 0.1f;
                     }
                 }

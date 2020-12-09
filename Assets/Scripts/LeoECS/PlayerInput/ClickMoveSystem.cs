@@ -1,4 +1,4 @@
-﻿using LeoECS.Command;
+﻿using LeoECS.Command.Components;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -16,9 +16,12 @@ namespace LeoECS.PlayerInput
                 !Physics.Raycast(Camera.main.ScreenPointToRay(new Vector2(mousePosition.x, mousePosition.y)), out var hit)
             ) return;
 
-            // Creates new entity in world context.
-            var entity = ecsWorld.NewEntity ();
-            entity.Get<CommandComponent>().command = new MoveCommand(gameState.selectedActors, hit.point);
+            var entity = ecsWorld.NewEntity();
+            entity.Replace(new MoveCommand
+            {
+                selectedActors = gameState.selectedActors,
+                targetPosition = hit.point
+            });
         }
     }
 }

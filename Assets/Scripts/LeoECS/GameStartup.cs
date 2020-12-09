@@ -1,4 +1,6 @@
 ﻿using LeoECS.Command;
+using LeoECS.Command.Components;
+using LeoECS.Command.Systems;
 using LeoECS.Nav;
 using LeoECS.PlayerInput;
 using LeoECS.Pooling;
@@ -38,13 +40,12 @@ namespace LeoECS
 
             systems
                 .Add(new UnitsInitSystem())
-                .Add(new UnitSpawnSystem())
-                .Add(new CommandSystem())
+                .Add(new SpawnCommandSystem())
+                .Add(new MoveCommandSystem())
                 .Add(new ClickMoveSystem())
                 .Add(new UnitSelectionSystem())
                 .Add(new DebugInputsSystem())
                 .Add(new DynamicNavSystem())
-                .OneFrame<UnitSpawnCommand>()
                 .Inject(gameState)
                 .Inject(configuration)
                 .Inject(unitsPool)
