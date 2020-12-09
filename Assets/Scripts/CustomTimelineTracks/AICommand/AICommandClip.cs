@@ -12,7 +12,7 @@ public class AICommandClip : PlayableAsset, ITimelineClipAsset
 
 	public AICommand.CommandType commandType;
 	public Vector3 targetPosition; //for movement
-	public ExposedReference<ActorView> targetUnit; //for attacks
+	public ExposedReference<UnitView> targetUnit; //for attacks
 
     public ClipCaps clipCaps
     {

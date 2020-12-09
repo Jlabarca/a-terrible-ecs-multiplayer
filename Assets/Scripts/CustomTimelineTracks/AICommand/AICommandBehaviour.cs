@@ -8,7 +8,7 @@ using UnityEngine.Timeline;
 public class AICommandBehaviour : PlayableBehaviour
 {
 	public AICommand.CommandType commandType;
-	public ActorView targetUnit;
+	public UnitView targetUnit;
     public Vector3 targetPosition;
 
 	[HideInInspector]
