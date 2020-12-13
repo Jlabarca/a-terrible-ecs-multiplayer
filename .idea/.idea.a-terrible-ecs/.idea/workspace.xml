@@ -22,55 +22,133 @@
     <list default="true" id="1f84ad93-390a-4ff4-ba64-db31a46c5618" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CommandsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CommandsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/TestProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/TestProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CommandsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CommandsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandSystem.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibEcs/Ent_Handle_Components.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Original/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/52/8ab45bf7/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/DebugInputProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Components/NavigationComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/ScriptableObjects/Configuration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/TestProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/SettingsFramework.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@e77aebcf29/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../others/actors.unity.snake/Assets/Runtime/Source/LayerGame.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorsInitSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorSpawnEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/DeadActorsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C57AEE07-FB86-42A1-88E4-4946A26514BE/39/fe0a89c2/IEcsSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/ImplEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/ImplActor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C57AEE07-FB86-42A1-88E4-4946A26514BE/ae/3d59db49/IEcsRunSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/LayerImpl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/Layer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitsInitSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibProcessors/Processor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Components/HealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/SpawnCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/DeadUnitsSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/DynamicNavSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Unit/UnitView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/NavigationComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorSpawnSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/ScriptableObjects/Configuration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SpawnCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/MoveProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/SpawnCommandSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/GameStartup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/AsyncCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CommandsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Components/UnitComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainLayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/DebugInputsSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ActorSelectionSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/ActorsPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Main/CircleActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/UnitsPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/GenericObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/ActorView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/UnitView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibEcs/ent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainProcessor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/MoveCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Command.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/ActorView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/GameStartup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/AsyncCommand.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CommandsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorInstructionSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorStateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Actor/ActorSpawnCommand.cs" />
+        <option value="$PROJECT_DIR$/Packages/manifest.json" />
+        <option value="$PROJECT_DIR$/Assets/Resources/SettingsFramework.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/ActorComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/UnitView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitsInitSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitSpawnCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/DeadUnitsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/UnitsPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Components/MovementComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Unit/UnitView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/DebugInputsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/CommandComponents/SpawnCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/CommandComponents/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Main/SpawnProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MoveProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/DebugInputProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Components/HealthComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SpawnCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Components/NavigationComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Components/UnitComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/MoveProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/UnitSpawnCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/CommandSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/UnitSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/SpawnCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/DebugInputsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/SpawnCommandSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/GameStartup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/DynamicNavSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/TestProcessor.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +187,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606600804345</updated>
-      <workItem from="1606600812691" duration="4238000" />
+      <workItem from="1606600812691" duration="11352000" />
+      <workItem from="1607291565229" duration="7063000" />
+      <workItem from="1607554931551" duration="787000" />
+      <workItem from="1607693717503" duration="39952000" />
     </task>
     <servers />
   </component>
@@ -125,14 +206,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="627" y="253" width="666" height="534" key="find.popup" timestamp="1606615878401">
+    <state x="727" y="244" key="RiderGenerateDialog" timestamp="1607883498836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="253" width="666" height="534" key="find.popup/0.0.1920.1040/-1080.-356.1080.1880@0.0.1920.1040" timestamp="1606615878401" />
+    <state x="727" y="244" key="RiderGenerateDialog/0.0.1920.1040/-1080.-356.1080.1880@0.0.1920.1040" timestamp="1607883498836" />
+    <state x="627" y="253" width="666" height="534" key="find.popup" timestamp="1607981492931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="253" width="666" height="534" key="find.popup/0.0.1920.1040/-1080.-356.1080.1880@0.0.1920.1040" timestamp="1607981492931" />
   </component>
 </project>

@@ -75,10 +75,40 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Actors" t="Include">
+            <e p="Command" t="Include">
+              <e p="Components" t="Include">
+                <e p="MoveCommand.cs" t="Include" />
+                <e p="SpawnCommand.cs" t="Include" />
+              </e>
+              <e p="Processors" t="Include">
+                <e p="MoveProcessor.cs" t="Include" />
+                <e p="SpawnProcessor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Components" t="Include">
+              <e p="HealthComponent.cs" t="Include" />
+              <e p="NavigationComponent.cs" t="Include" />
+              <e p="UnitComponent.cs" t="Include" />
+            </e>
+            <e p="Main" t="Include">
+              <e p="CircleActor.cs" t="Include" />
+              <e p="MainLayer.cs" t="Include" />
+              <e p="MainProcessor.cs" t="Include" />
+            </e>
+            <e p="PlayerInput" t="Include">
+              <e p="ClickMoveProcessor.cs" t="Include" />
+              <e p="DebugInputProcessor.cs" t="Include" />
+              <e p="UnitSelectionProcessor.cs" t="Include" />
+            </e>
+            <e p="TestProcessor.cs" t="Include" />
+            <e p="Unit" t="Include">
+              <e p="UnitView.cs" t="Include" />
+            </e>
+          </e>
           <e p="Commands" t="Include">
             <e p="Command.cs" t="Include" />
           </e>
-          <e p="CommandsManager.cs" t="Include" />
           <e p="CustomTimelineTracks" t="Include">
             <e p="AICommand" t="Include">
               <e p="AICommandBehaviour.cs" t="Include" />
@@ -128,38 +158,40 @@
           </e>
           <e p="GameState.cs" t="Include" />
           <e p="LeoECS" t="Include">
-            <e p="Actor" t="Include">
-              <e p="ActorComponent.cs" t="Include" />
-              <e p="ActorsInitSystem.cs" t="Include" />
-              <e p="ActorSpawnEvent.cs" t="Include" />
-              <e p="ActorSpawnSystem.cs" t="Include" />
-              <e p="DeadActorsSystem.cs" t="Include" />
-            </e>
             <e p="Command" t="Include">
-              <e p="AsyncCommand.cs" t="Include" />
-              <e p="CommandComponent.cs" t="Include" />
-              <e p="CommandSystem.cs" t="Include" />
-              <e p="MoveCommand.cs" t="Include" />
+              <e p="Components" t="Include">
+                <e p="MoveCommand.cs" t="Include" />
+                <e p="SpawnCommand.cs" t="Include" />
+              </e>
+              <e p="Systems" t="Include">
+                <e p="MoveCommandSystem.cs" t="Include" />
+                <e p="SpawnCommandSystem.cs" t="Include" />
+              </e>
             </e>
             <e p="GameStartup.cs" t="Include" />
             <e p="Monobehaviours" t="Include">
-              <e p="ActorView.cs" t="Include" />
+              <e p="UnitView.cs" t="Include" />
             </e>
             <e p="Nav" t="Include">
               <e p="DynamicNavSystem.cs" t="Include" />
               <e p="NavigationComponent.cs" t="Include" />
             </e>
             <e p="PlayerInput" t="Include">
-              <e p="ActorSelectionSystem.cs" t="Include" />
               <e p="ClickMoveSystem.cs" t="Include" />
               <e p="DebugInputsSystem.cs" t="Include" />
+              <e p="UnitSelectionSystem.cs" t="Include" />
             </e>
             <e p="Pooling" t="Include">
-              <e p="ActorsPool.cs" t="Include" />
               <e p="GenericObjectPool.cs" t="Include" />
+              <e p="UnitsPool.cs" t="Include" />
             </e>
             <e p="ScriptableObjects" t="Include">
               <e p="Configuration.cs" t="Include" />
+            </e>
+            <e p="Unit" t="Include">
+              <e p="DeadUnitsSystem.cs" t="Include" />
+              <e p="UnitComponent.cs" t="Include" />
+              <e p="UnitsInitSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Original" t="Include">
