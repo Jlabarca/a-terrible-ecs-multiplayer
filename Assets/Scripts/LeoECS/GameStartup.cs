@@ -17,7 +17,8 @@ namespace LeoECS
         private EcsWorld ecsWorld;
         [SerializeField]
         private EcsSystems systems;
-        private System.Random random;
+        [SerializeField]
+        private EcsSystems fixedSystems;
         [SerializeField]
         private GameState gameState;
         public Configuration configuration;
@@ -28,7 +29,7 @@ namespace LeoECS
 
             ecsWorld = new EcsWorld();
             systems = new EcsSystems(ecsWorld);
-            random = new System.Random(1);
+            fixedSystems = new EcsSystems(ecsWorld);
             gameState = new GameState();
             unitsPool = gameObject.GetComponent<UnitsPool>();
             unitsPool.Prewarm(1000, configuration.unitView);
@@ -40,12 +41,18 @@ namespace LeoECS
 
             systems
                 .Add(new UnitsInitSystem())
-                .Add(new SpawnCommandSystem())
-                .Add(new MoveCommandSystem())
                 .Add(new ClickMoveSystem())
                 .Add(new UnitSelectionSystem())
                 .Add(new DebugInputsSystem())
                 .Add(new DynamicNavSystem())
+                .Inject(gameState)
+                .Inject(configuration)
+                .Inject(unitsPool)
+                .Init();
+
+            fixedSystems
+                .Add(new SpawnCommandSystem())
+                .Add(new MoveCommandSystem())
                 .Inject(gameState)
                 .Inject(configuration)
                 .Inject(unitsPool)
@@ -58,6 +65,7 @@ namespace LeoECS
 
         private void FixedUpdate()
         {
+            fixedSystems.Run();
             gameState.time += (long)(Time.fixedDeltaTime * 1000);
         }
 
