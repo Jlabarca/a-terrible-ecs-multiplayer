@@ -1,4 +1,5 @@
 ﻿using Actors.Command.Processors;
+using Actors.Nav;
 using Actors.PlayerInput;
 using Pixeye.Actors;
 
@@ -14,12 +15,12 @@ namespace Actors.Main
     {
       gameState = Add<GameState>();
 
-
       Add<ClickMoveProcessor>();
       Add<UnitSelectionProcessor>();
       Add<SpawnProcessor>();
       Add<MoveProcessor>();
       Add<DebugInputProcessor>();
+      Add<DynamicNavProcessor>();
 
     }
 
