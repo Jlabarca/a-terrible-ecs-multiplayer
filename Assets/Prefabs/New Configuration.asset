@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 057696cd54634690b6243d44d5775196, type: 3}
   m_Name: New Configuration
   m_EditorClassIdentifier: 
-  actorView: {fileID: -6387252795294543897, guid: 448894f82390f3a4fa2d79c4940e59cc,
+  unitView: {fileID: -6387252795294543897, guid: 6dd94f2b16d15ba4680d2fdfb9187957,
     type: 3}

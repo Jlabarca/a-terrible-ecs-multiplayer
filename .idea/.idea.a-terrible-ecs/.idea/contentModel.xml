@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\JLabarca\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\JLabarca\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_a-terrible-ecs.-1356553737.00" t="ExcludeRecursive" />
+    <e p="C:\Users\JLabarca\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\JLabarca\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_a-terrible-ecs.-1356553737.00" t="ExcludeRecursive" />
     <e p="E:\Git\JLabarca\a-terrible-ecs" t="IncludeRecursive">
       <e p="a-terrible-ecs.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AnimationController.cs" t="Include" />
         <e p="DefaultPlayables" t="Include">
           <e p="Editor" t="Include">
             <e p="TimelinePlayableWizard.cs" t="Include" />
@@ -79,10 +80,12 @@
             <e p="Command" t="Include">
               <e p="Components" t="Include">
                 <e p="MoveCommand.cs" t="Include" />
+                <e p="SelectionCommand.cs" t="Include" />
                 <e p="SpawnCommand.cs" t="Include" />
               </e>
               <e p="Processors" t="Include">
                 <e p="MoveProcessor.cs" t="Include" />
+                <e p="SelectionProcessor.cs" t="Include" />
                 <e p="SpawnProcessor.cs" t="Include" />
               </e>
             </e>
@@ -96,12 +99,14 @@
               <e p="MainLayer.cs" t="Include" />
               <e p="MainProcessor.cs" t="Include" />
             </e>
+            <e p="Nav" t="Include">
+              <e p="DynamicNavProcessor.cs" t="Include" />
+            </e>
             <e p="PlayerInput" t="Include">
               <e p="ClickMoveProcessor.cs" t="Include" />
               <e p="DebugInputProcessor.cs" t="Include" />
               <e p="UnitSelectionProcessor.cs" t="Include" />
             </e>
-            <e p="TestProcessor.cs" t="Include" />
             <e p="Unit" t="Include">
               <e p="UnitView.cs" t="Include" />
             </e>

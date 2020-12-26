@@ -1,9 +1,12 @@
 {
   "dependencies": {
+    "com.leopotam.ecs": "https://github.com/Leopotam/ecs.git",
+    "com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git",
+    "com.pixeye.ecs": "https://github.com/PixeyeHQ/actors.unity.git",
     "com.unity.cinemachine": "2.3.4",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
-    "com.unity.ide.vscode": "1.2.1",
+    "com.unity.ide.vscode": "1.2.3",
     "com.unity.test-framework": "1.1.16",
     "com.unity.textmeshpro": "2.1.1",
     "com.unity.timeline": "1.2.16",
@@ -38,9 +41,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-	"com.leopotam.ecs": "https://github.com/Leopotam/ecs.git",
-	"com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git",
-    "com.pixeye.ecs": "https://github.com/PixeyeHQ/actors.unity.git"
+    "com.unity.modules.xr": "1.0.0"
   }
 }

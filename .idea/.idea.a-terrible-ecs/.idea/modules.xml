@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/.idea.a-terrible-ecs.iml" filepath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/.idea.a-terrible-ecs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/riderModule.iml" filepath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/riderModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/riderModule.iml" filepath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/riderModule.iml" />
     </modules>
   </component>
 </project>
