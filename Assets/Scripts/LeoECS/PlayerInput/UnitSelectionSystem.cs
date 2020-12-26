@@ -66,7 +66,7 @@ namespace LeoECS.PlayerInput
 						if(actorComponent.Hp < 1) return;
 						Vector2 screenPos = Camera.main.WorldToScreenPoint(actorComponent.unitView.transform.position);
 						if(selectionRect.Contains(screenPos)) {
-							gameState.selectedActors.Add(_actors.Get2(actorIndex).navMeshAgent);
+							gameState.selectedActors.Add(_actors.Get2(actorIndex).navMeshAgent.gameObject);
 							//GameManager.Instance.AddToSelection(allSelectables[i], false);
 						}
 					}

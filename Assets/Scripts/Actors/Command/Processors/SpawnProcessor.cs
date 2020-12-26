@@ -31,7 +31,6 @@ namespace Actors.Command.Processors
 
     public void TickFixed(float dt)
     {
-      Debug.Log(spawnCommands.length);
       foreach (var spawnCommandEntity in spawnCommands)
       {
 
@@ -44,7 +43,6 @@ namespace Actors.Command.Processors
           var newEntity = Layer.Entity.Create(prefab, spawnPosition, true);
           newEntity.Set<UnitComponent>();
           if (newEntity.transform.TryGetComponent<NavMeshAgent>(out var navMeshAgent)){
-            Debug.Log("tiene");
             var navigation = newEntity.Set<NavigationComponent>();
             navigation.navMeshAgent = navMeshAgent;
           }

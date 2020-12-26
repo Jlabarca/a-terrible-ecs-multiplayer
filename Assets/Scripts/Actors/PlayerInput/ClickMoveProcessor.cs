@@ -4,8 +4,8 @@ using MoveCommand = Actors.Command.Components.MoveCommand;
 
 namespace Actors.PlayerInput
 {
-    public sealed class ClickMoveProcessor : Processor, ITick {
-
+    public sealed class ClickMoveProcessor : Processor, ITick
+    {
         public void Tick(float dt)
         {
             var mousePosition = Input.mousePosition;

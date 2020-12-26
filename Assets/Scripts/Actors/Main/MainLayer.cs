@@ -1,6 +1,7 @@
 ﻿using Actors.Command.Processors;
 using Actors.Nav;
 using Actors.PlayerInput;
+using Actors.Unit;
 using Pixeye.Actors;
 
 namespace Actors.Main
@@ -19,9 +20,9 @@ namespace Actors.Main
       Add<UnitSelectionProcessor>();
       Add<SpawnProcessor>();
       Add<MoveProcessor>();
+      Add<SelectionProcessor>();
       Add<DebugInputProcessor>();
       Add<DynamicNavProcessor>();
-
     }
 
     // Use to clean up custom stuff before the layer gets destroyed.

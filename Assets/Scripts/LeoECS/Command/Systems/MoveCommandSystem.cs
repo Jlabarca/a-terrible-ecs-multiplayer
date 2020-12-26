@@ -19,7 +19,7 @@ namespace LeoECS.Command.Systems
 
                 for (int i = 0; i < moveCommand.selectedActors.Count; i++)
                 {
-                    var navMeshAgent = moveCommand.selectedActors[i];
+                    var navMeshAgent = moveCommand.selectedActors[i].GetComponent<NavMeshAgent>();
                     navMeshAgent.isStopped = false;
                     navMeshAgent.radius = 0.1f;
                     navMeshAgent.stoppingDistance = 0.1f;
@@ -31,7 +31,7 @@ namespace LeoECS.Command.Systems
             }
         }
 
-        private static Vector3[] GetFormationPositions(List<NavMeshAgent> selectedActors, Vector3 targetPosition)
+        private static Vector3[] GetFormationPositions(List<GameObject> selectedActors, Vector3 targetPosition)
         {
             //TODO: accomodate bigger numbers
             var originalPositions = new Vector3[selectedActors.Count];

@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.AI;
 
 [Serializable]
 public class GameState
 {
     public long time;
-    public List<NavMeshAgent> selectedActors;
+    public List<GameObject> selectedActors;
     public GameState()
     {
-       selectedActors = new List<NavMeshAgent>();
+       selectedActors = new List<GameObject>();
     }
 }

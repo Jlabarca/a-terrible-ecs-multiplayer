@@ -1,4 +1,6 @@
-﻿using Actors.Components;
+﻿using System.Collections.Generic;
+using Actors.Command.Components;
+using Actors.Components;
 using Pixeye.Actors;
 using UnityEngine;
 
@@ -6,7 +8,6 @@ namespace Actors.PlayerInput
 {
     public class UnitSelectionProcessor : Processor, ITick
     {
-        private GameState gameState;
         private Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
         private Vector2 lmbDownMousePos; //screen coordinates
         private Vector2 currentMousePos; //screen coordinates
@@ -17,13 +18,7 @@ namespace Actors.PlayerInput
         private Group<UnitComponent, NavigationComponent> _actors;
         private readonly LayerMask unitsLayerMask = LayerMask.GetMask("Units");
 
-
         private const float CLICK_TOLERANCE = .5f; //the player has this time to release the mouse button for it to be registered as a click
-
-        public UnitSelectionProcessor()
-        {
-	        gameState = Layer.Get<GameState>();
-        }
 
         public void Tick(float dt)
         {
@@ -59,10 +54,10 @@ namespace Actors.PlayerInput
 
 			//-------------- LEFT MOUSE BUTTON UP --------------
 			if(Input.GetMouseButtonUp(0)) {
-				gameState.selectedActors.Clear();
 
 				if(boxSelectionInitiated) {
 					//consider the mouse release as the end of a box selection
+					var selectedActors = new List<GameObject>();
 
 					foreach (var actorEntity in _actors)
 					{
@@ -70,10 +65,11 @@ namespace Actors.PlayerInput
 						if(unitComponent.Hp < 1) return;
 						Vector2 screenPos = Camera.main.WorldToScreenPoint(actorEntity.transform.position);
 						if(selectionRect.Contains(screenPos)) {
-							gameState.selectedActors.Add(actorEntity.Get<NavigationComponent>().navMeshAgent);
-							//GameManager.Instance.AddToSelection(allSelectables[i], false);
+							selectedActors.Add(actorEntity.transform.gameObject);
 						}
 					}
+
+					Entity.Create().Set<SelectionCommand>().selectedActors = selectedActors;
 
 					//hide the box
 					UIManager.Instance.ToggleSelectionRectangle(false);

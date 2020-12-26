@@ -6,10 +6,9 @@ using UnityEngine;
 
 namespace Actors.Command.Components
  {
-   public class MoveCommand
+   public class SelectionCommand
    {
      public List<GameObject> selectedActors;
-     public Vector3 targetPosition;
    }
 
    #region HELPERS
@@ -19,18 +18,18 @@ namespace Actors.Command.Components
    [Il2CppSetOption(Option.DivideByZeroChecks, false)]
    static partial class Component
    {
-     public const string Move = "Game.Source.MoveCommand";
+     public const string SelectionCommandNs = "Actors.Command.Components.SelectionCommand";
      [MethodImpl(MethodImplOptions.AggressiveInlining)]
-     public static ref MoveCommand MoveCommand(in this ent entity) =>
-       ref Storage<MoveCommand>.components[entity.id];
+     public static ref SelectionCommand SelectionCommand(in this ent entity) =>
+       ref Storage<SelectionCommand>.components[entity.id];
    }
 
    [Il2CppSetOption(Option.NullChecks, false)]
    [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
    [Il2CppSetOption(Option.DivideByZeroChecks, false)]
-   sealed class StorageMoveCommand : Storage<MoveCommand>
+   sealed class StorageSelectionCommand : Storage<SelectionCommand>
    {
-     public override MoveCommand Create() => new MoveCommand();
+     public override SelectionCommand Create() => new SelectionCommand();
      // Use for cleaning components that were removed at the current frame.
      public override void Dispose(indexes disposed)
      {
