@@ -1,13 +1,44 @@
 ﻿using System.Runtime.CompilerServices;
+using Lockstep.Core.Logic.Serialization;
+using Lockstep.Core.Logic.Serialization.Utils;
 using Pixeye.Actors;
+using Server.Common;
 using Unity.IL2CPP.CompilerServices;
 using UnityEngine;
 
 namespace Actors.Command.Components
  {
-   public class SpawnCommand
+   public class SpawnCommand : ICommand
    {
+     public byte actorId;
      public Vector3 position;
+
+     #region Command
+     public CommandTag Tag => CommandTag.SpawnCommand;
+
+     public void Serialize(Serializer writer)
+     {
+       writer.Put(actorId);
+       writer.Put((int)position.x);
+       writer.Put((int)position.y);
+       writer.Put((int)position.z);
+     }
+
+     void ISerializable.Deserialize(Deserializer reader)
+     {
+       throw new System.NotImplementedException();
+     }
+
+     public static SpawnCommand Deserialize (Deserializer reader)
+     {
+       var spawnCommand = new SpawnCommand
+       {
+         actorId = reader.GetByte(),
+         position =  new Vector3(reader.GetInt(), reader.GetInt(), reader.GetInt())
+       };
+       return spawnCommand;
+     }
+     #endregion
    }
 
    #region HELPERS

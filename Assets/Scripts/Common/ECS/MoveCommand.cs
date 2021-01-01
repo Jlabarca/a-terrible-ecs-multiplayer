@@ -1,15 +1,46 @@
-﻿using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
+using Lockstep.Core.Logic.Serialization;
+using Lockstep.Core.Logic.Serialization.Utils;
 using Pixeye.Actors;
+using Server.Common;
 using Unity.IL2CPP.CompilerServices;
 using UnityEngine;
 
 namespace Actors.Command.Components
  {
-   public class MoveCommand
+   public class MoveCommand : ICommand
    {
-     public List<GameObject> selectedActors;
-     public Vector3 targetPosition;
+     public Vector3 position;
+     public uint[] units;
+
+     #region Command
+
+     public CommandTag Tag => CommandTag.MoveCommand;
+
+     public void Serialize(Serializer writer)
+     {
+       writer.Put((int)position.x);
+       writer.Put((int)position.y);
+       writer.Put((int)position.z);
+       writer.PutArray(units);
+     }
+
+     void ISerializable.Deserialize(Deserializer reader)
+     {
+       throw new System.NotImplementedException();
+     }
+
+     public static MoveCommand Deserialize(Deserializer reader)
+     {
+       var spawnCommand = new MoveCommand
+       {
+         position =  new Vector3(reader.GetInt(), reader.GetInt(), reader.GetInt()),
+         units = reader.GetUIntArray()
+       };
+       return spawnCommand;
+     }
+
+     #endregion
    }
 
    #region HELPERS

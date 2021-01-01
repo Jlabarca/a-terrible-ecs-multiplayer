@@ -1,4 +1,5 @@
 ﻿using Actors.Command.Components;
+using Actors.Components;
 using Pixeye.Actors;
 
 namespace Actors.Command.Processors
@@ -6,34 +7,32 @@ namespace Actors.Command.Processors
     public class SelectionProcessor : Processor, ITickFixed
     {
         private readonly Group<SelectionCommand> selectionCommands = default;
-        private GameState gameState;
+        private readonly Group<UnitComponent> units = default;
+        private readonly GameState gameState;
 
         public SelectionProcessor()
         {
             gameState = Layer.Get<GameState>();
         }
 
-
         public void TickFixed(float dt)
         {
             foreach (var selectionCommandsEntity in selectionCommands)
             {
                 var command = selectionCommandsEntity.Get<SelectionCommand>();
-
-                foreach (var gameObject in gameState.selectedActors)
-                {
-                    gameObject.transform.GetChild(gameObject.transform.childCount - 1).gameObject.SetActive(false);
-                }
-
                 gameState.selectedActors.Clear();
-                foreach (var gameObject in command.selectedActors)
-                {
-                    gameState.selectedActors.Add(gameObject);
-                }
+                gameState.selectedActorsGameObjects.Clear();
 
-                foreach (var gameObject in gameState.selectedActors)
+                foreach (var ent in units)
                 {
-                    gameObject.transform.GetChild(gameObject.transform.childCount - 1).gameObject.SetActive(true);
+                    if (command.selectedActors.Contains(ent.transform.gameObject))
+                    {
+                        ent.transform.GetChild(ent.transform.childCount - 1).gameObject.SetActive(true);
+                        gameState.selectedActors.Add(ent.Get<UnitComponent>().unitId);
+                        gameState.selectedActorsGameObjects.Add(ent.transform.gameObject);
+                    }
+                    else
+                        ent.transform.GetChild(ent.transform.childCount - 1).gameObject.SetActive(false);
                 }
 
                 selectionCommandsEntity.Remove<SelectionCommand>();
