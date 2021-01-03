@@ -8,7 +8,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AnimationController.cs" t="Include" />
         <e p="DefaultPlayables" t="Include">
           <e p="Editor" t="Include">
             <e p="TimelinePlayableWizard.cs" t="Include" />
@@ -75,13 +74,44 @@
             <e p="Transparent-AlphaBlend Rim.shader" t="Include" />
           </e>
         </e>
+        <e p="LiteNetLib" t="Include">
+          <e p="BaseChannel.cs" t="Include" />
+          <e p="ConnectionRequest.cs" t="Include" />
+          <e p="INetEventListener.cs" t="Include" />
+          <e p="Layers" t="Include">
+            <e p="Crc32cLayer.cs" t="Include" />
+            <e p="PacketLayerBase.cs" t="Include" />
+            <e p="XorEncryptLayer.cs" t="Include" />
+          </e>
+          <e p="NatPunchModule.cs" t="Include" />
+          <e p="NetConstants.cs" t="Include" />
+          <e p="NetDebug.cs" t="Include" />
+          <e p="NetManager.cs" t="Include" />
+          <e p="NetPacket.cs" t="Include" />
+          <e p="NetPacketPool.cs" t="Include" />
+          <e p="NetPeer.cs" t="Include" />
+          <e p="NetSocket.cs" t="Include" />
+          <e p="NetStatistics.cs" t="Include" />
+          <e p="NetUtils.cs" t="Include" />
+          <e p="ReliableChannel.cs" t="Include" />
+          <e p="SequencedChannel.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="CRC32C.cs" t="Include" />
+            <e p="FastBitConverter.cs" t="Include" />
+            <e p="INetSerializable.cs" t="Include" />
+            <e p="NetDataReader.cs" t="Include" />
+            <e p="NetDataWriter.cs" t="Include" />
+            <e p="NetPacketProcessor.cs" t="Include" />
+            <e p="NetSerializer.cs" t="Include" />
+            <e p="NtpPacket.cs" t="Include" />
+            <e p="NtpRequest.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Actors" t="Include">
             <e p="Command" t="Include">
               <e p="Components" t="Include">
-                <e p="MoveCommand.cs" t="Include" />
                 <e p="SelectionCommand.cs" t="Include" />
-                <e p="SpawnCommand.cs" t="Include" />
               </e>
               <e p="Processors" t="Include">
                 <e p="MoveProcessor.cs" t="Include" />
@@ -95,12 +125,13 @@
               <e p="UnitComponent.cs" t="Include" />
             </e>
             <e p="Main" t="Include">
-              <e p="CircleActor.cs" t="Include" />
               <e p="MainLayer.cs" t="Include" />
-              <e p="MainProcessor.cs" t="Include" />
             </e>
             <e p="Nav" t="Include">
               <e p="DynamicNavProcessor.cs" t="Include" />
+            </e>
+            <e p="Online" t="Include">
+              <e p="OnlineProcessor.cs" t="Include" />
             </e>
             <e p="PlayerInput" t="Include">
               <e p="ClickMoveProcessor.cs" t="Include" />
@@ -114,16 +145,28 @@
           <e p="Commands" t="Include">
             <e p="Command.cs" t="Include" />
           </e>
-          <e p="CustomTimelineTracks" t="Include">
-            <e p="AICommand" t="Include">
-              <e p="AICommandBehaviour.cs" t="Include" />
-              <e p="AICommandClip.cs" t="Include" />
-              <e p="AICommandMixerBehaviour.cs" t="Include" />
-              <e p="AICommandTrack.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="AICommandInspector.cs" t="Include" />
+          <e p="Common" t="Include">
+            <e p="CommandTag.cs" t="Include" />
+            <e p="ECS" t="Include">
+              <e p="MoveCommand.cs" t="Include" />
+              <e p="SpawnCommand.cs" t="Include" />
+            </e>
+            <e p="ICommand.cs" t="Include" />
+            <e p="Init.cs" t="Include" />
+            <e p="MessageTag.cs" t="Include" />
+            <e p="NetworkMessage.cs" t="Include" />
+            <e p="Serialization" t="Include">
+              <e p="Compressor.cs" t="Include" />
+              <e p="ISerializable.cs" t="Include" />
+              <e p="Utils" t="Include">
+                <e p="Deserializer.cs" t="Include" />
+                <e p="FastBitConverter.cs" t="Include" />
+                <e p="Serializer.cs" t="Include" />
+                <e p="Source.txt" t="Include" />
               </e>
             </e>
+          </e>
+          <e p="CustomTimelineTracks" t="Include">
             <e p="Dialogue" t="Include">
               <e p="DialogueBehaviour.cs" t="Include" />
               <e p="DialogueClip.cs" t="Include" />
@@ -162,42 +205,37 @@
             </e>
           </e>
           <e p="GameState.cs" t="Include" />
-          <e p="LeoECS" t="Include">
-            <e p="Command" t="Include">
-              <e p="Components" t="Include">
-                <e p="MoveCommand.cs" t="Include" />
-                <e p="SpawnCommand.cs" t="Include" />
+          <e p="NLog" t="Include">
+            <e p="Appender" t="Include">
+              <e p="FileWriter.cs" t="Include" />
+              <e p="SocketAppender" t="Include">
+                <e p="Networking" t="Include">
+                  <e p="AbstractTcpSocket.cs" t="Include" />
+                  <e p="EventArgs" t="Include">
+                    <e p="ReceiveEventArgs.cs" t="Include" />
+                    <e p="TcpSocketEventArgs.cs" t="Include" />
+                  </e>
+                  <e p="TcpClientSocket.cs" t="Include" />
+                  <e p="TcpServerSocket.cs" t="Include" />
+                </e>
+                <e p="SocketAppender.cs" t="Include" />
+                <e p="SocketAppenderBase.cs" t="Include" />
+                <e p="SOSMaxAppender.cs" t="Include" />
               </e>
-              <e p="Systems" t="Include">
-                <e p="MoveCommandSystem.cs" t="Include" />
-                <e p="SpawnCommandSystem.cs" t="Include" />
-              </e>
             </e>
-            <e p="GameStartup.cs" t="Include" />
-            <e p="Monobehaviours" t="Include">
-              <e p="UnitView.cs" t="Include" />
+            <e p="Formatter" t="Include">
+              <e p="ColorCodeFormatter.cs" t="Include" />
+              <e p="DefaultLogMessageFormatter.cs" t="Include" />
+              <e p="TimestampFormatter.cs" t="Include" />
             </e>
-            <e p="Nav" t="Include">
-              <e p="DynamicNavSystem.cs" t="Include" />
-              <e p="NavigationComponent.cs" t="Include" />
-            </e>
-            <e p="PlayerInput" t="Include">
-              <e p="ClickMoveSystem.cs" t="Include" />
-              <e p="DebugInputsSystem.cs" t="Include" />
-              <e p="UnitSelectionSystem.cs" t="Include" />
-            </e>
-            <e p="Pooling" t="Include">
-              <e p="GenericObjectPool.cs" t="Include" />
-              <e p="UnitsPool.cs" t="Include" />
-            </e>
-            <e p="ScriptableObjects" t="Include">
-              <e p="Configuration.cs" t="Include" />
-            </e>
-            <e p="Unit" t="Include">
-              <e p="DeadUnitsSystem.cs" t="Include" />
-              <e p="UnitComponent.cs" t="Include" />
-              <e p="UnitsInitSystem.cs" t="Include" />
-            </e>
+            <e p="Log.cs" t="Include" />
+            <e p="Logger.cs" t="Include" />
+            <e p="LoggerFactory.cs" t="Include" />
+            <e p="LogLevel.cs" t="Include" />
+          </e>
+          <e p="Online" t="Include">
+            <e p="INetwork.cs" t="Include" />
+            <e p="LiteNetLibNetwork.cs" t="Include" />
           </e>
           <e p="Original" t="Include">
             <e p="Managers" t="Include">
@@ -206,12 +244,6 @@
               <e p="InputManager.cs" t="Include" />
               <e p="Singleton.cs" t="Include" />
               <e p="UIManager.cs" t="Include" />
-            </e>
-            <e p="RTS" t="Include">
-              <e p="ActorTemplate.cs" t="Include" />
-              <e p="AICommand.cs" t="Include" />
-              <e p="Platoon.cs" t="Include" />
-              <e p="Unit.cs" t="Include" />
             </e>
             <e p="Utilities" t="Include">
               <e p="DemoScript.cs" t="Include" />

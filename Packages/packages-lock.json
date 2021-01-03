@@ -1,19 +1,5 @@
 {
   "dependencies": {
-    "com.leopotam.ecs": {
-      "version": "https://github.com/Leopotam/ecs.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "e77aebcf29670ee9dafe9f2545b8596778d4a1bd"
-    },
-    "com.leopotam.ecs-unityintegration": {
-      "version": "https://github.com/Leopotam/ecs-unityintegration.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "47a1a8ea26342894459ec478d56856c3f71a7cab"
-    },
     "com.pixeye.ecs": {
       "version": "https://github.com/PixeyeHQ/actors.unity.git",
       "depth": 0,

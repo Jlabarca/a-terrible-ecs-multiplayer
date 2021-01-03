@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LeoECS.unity
-    guid: 793ef0d1976261a4e84ca5bd2fded2de
+    path: Assets/Scenes/Actors/MainScene.unity
+    guid: 33eff2780bafa6b45adab54fb3dc42ed
   m_configObjects: {}

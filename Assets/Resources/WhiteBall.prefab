@@ -4001,7 +4001,6 @@ GameObject:
   - component: {fileID: 5191527429794016721}
   - component: {fileID: 5282421558943127569}
   - component: {fileID: 5331755576332623143}
-  - component: {fileID: -6387252795294543897}
   - component: {fileID: 5524545204348471092}
   m_Layer: 8
   m_Name: WhiteBall
@@ -4067,19 +4066,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.7, z: 0}
---- !u!114 &-6387252795294543897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5195436975934958043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4533f36dc374183a0b53871efba5199, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  template: {fileID: 11400000, guid: c856e5f374a8f453580286138e3f44e9, type: 2}
 --- !u!195 &5524545204348471092
 NavMeshAgent:
   m_ObjectHideFlags: 0

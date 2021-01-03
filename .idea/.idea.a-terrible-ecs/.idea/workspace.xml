@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,27 +23,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f84ad93-390a-4ff4-ba64-db31a46c5618" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SelectionProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SelectionProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ECS.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.a-terrible-ecs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Configuration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/New Configuration.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAssets/Models/Environment/Materials/environment_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAssets/Models/Environment/Materials/environment_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAssets/Models/Environment/Materials/walkableGround_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAssets/Models/Environment/Materials/walkableGround_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAssets/Models/Towers/Materials/towerDiffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAssets/Models/Towers/Materials/towerDiffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SettingsFramework.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SettingsFramework.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/WhiteBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/WhiteBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Actors/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Actors/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ECS/MoveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ECS/MoveCommand.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SpawnCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ECS/SpawnCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SpawnCommand.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ECS/SpawnCommand.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/MoveProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/MoveProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SelectionProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SelectionProcessor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Components/UnitComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Components/UnitComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Main/CircleActor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Main/CircleActor.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainProcessor.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Nav/DynamicNavProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Nav/DynamicNavProcessor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/DebugInputProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/DebugInputProcessor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Unit/UnitView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Unit/UnitView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandClip.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandClip.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandMixerBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandMixerBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandTrack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/AICommandTrack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/Editor/AICommandInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomTimelineTracks/AICommand/Editor/AICommandInspector.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/SpawnCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/SpawnCommand.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/SpawnCommandSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/SpawnCommandSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/GameStartup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/GameStartup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/UnitView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/UnitView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/DynamicNavSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/DynamicNavSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/NavigationComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/NavigationComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/DebugInputsSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/DebugInputsSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/GenericObjectPool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/GenericObjectPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/UnitsPool.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/UnitsPool.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/ScriptableObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/ScriptableObjects/Configuration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/ScriptableObjects/Configuration.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/DeadUnitsSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/DeadUnitsSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitsInitSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitsInitSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/Managers/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Original/Managers/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/AICommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/AICommand.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/ActorTemplate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/ActorTemplate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/Platoon.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/Platoon.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/Unit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Original/RTS/Unit.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,51 +140,40 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/DynamicNavSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Nav/NavigationComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/UnitsInitSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Unit/DeadUnitsSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Attributes/FoldoutGroupAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Nav/DynamicNavProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/SpawnCommandSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/SpawnCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5DE66FF1-1FCB-4513-8463-255B392B032B/0d/4a7328ad/ICommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/f2/2c4077d1/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/UnitsPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/SettingsFramework.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C57AEE07-FB86-42A1-88E4-4946A26514BE/ae/3d59db49/IEcsRunSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Pooling/GenericObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/DebugInputsSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/Monobehaviours/UnitView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/ScriptableObjects/Configuration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@e77aebcf29/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Original/RTS/Unit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Original/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Main/CircleActor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainLayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Unit/UnitView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/Time.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/356F1DDB-1D52-4AD5-9C7A-2C95775BB38E/41/55518437/ExecuteCommandEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/ECS/MoveCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/Layer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/23/6fc45b32/Enum.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibEcs/ent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SpawnCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Commands/Command.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/ECS/SpawnCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/ImplEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/ImplActor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/MoveProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/d4/b268a844/Console.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibPools/PoolContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibPools/Pool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibEcs/Ent_Handle_Components.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Components/HealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibProcessors/Processor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Components/UnitComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Components/NavigationComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/52/8ab45bf7/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LeoECS/GameStartup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/83/3f0a01f9/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Original/Managers/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/96/3156d776/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/Core/LayerImpl.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../others/actors.unity.snake/Assets/Runtime/Source/LayerGame.cs" root0="SKIP_HIGHLIGHTING" />
@@ -113,20 +183,39 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveProcessor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/ClickMoveSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Components/MoveCommand.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/Command/Systems/MoveCommandSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LeoECS/PlayerInput/UnitSelectionSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Unit/SelectionCircleProcessor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ClientNetEventListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NetObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OnlineManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Online/INetwork.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SelectionCommand.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/ICommand.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Online/NetworkMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/DebugInputProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/SpawnCommand.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Components/UnitComponent.cs" />
+      <option value="$PROJECT_DIR$/Packages/manifest.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Components/MoveCommand.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.pixeye.ecs@33af006c18/Runtime/LibPools/Pool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/SettingsFramework.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Unit/UnitView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/ClickMoveProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SelectionProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SpawnProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Online/NetworkMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Common/MessageTag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Common/Init.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/MoveProcessor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Main/MainLayer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/PlayerInput/UnitSelectionProcessor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Command/Processors/SelectionProcessor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Online/LiteNetLibNetwork.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Common/NetworkMessage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Online/OnlineProcessor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kw9UcDdlpVm7EkYkBhFTOpDXr8" />
@@ -142,6 +231,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/build\Terrible.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\JLabarca\Desktop\build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -180,6 +277,9 @@
       <workItem from="1608345707360" duration="599000" />
       <workItem from="1608439758310" duration="1551000" />
       <workItem from="1608965094784" duration="6088000" />
+      <workItem from="1609006186663" duration="39958000" />
+      <workItem from="1609633898934" duration="4889000" />
+      <workItem from="1609702737613" duration="5910000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "com.leopotam.ecs": "https://github.com/Leopotam/ecs.git",
-    "com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git",
     "com.pixeye.ecs": "https://github.com/PixeyeHQ/actors.unity.git",
     "com.unity.cinemachine": "2.3.4",
     "com.unity.collab-proxy": "1.2.16",
