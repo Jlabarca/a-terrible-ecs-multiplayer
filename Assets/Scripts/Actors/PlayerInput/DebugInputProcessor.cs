@@ -1,4 +1,6 @@
-﻿using Actors.Command.Components;
+﻿using System.Collections.Generic;
+using Actors.Command.Components;
+using Online;
 using Pixeye.Actors;
 using UnityEngine;
 
@@ -6,20 +8,12 @@ namespace Actors.PlayerInput
 {
     public class DebugInputProcessor : Processor, ITick
     {
-        // Group<UnitComponent> objects;
-        //
-        // public override void HandleEcsEvents()
-        // {
-        //     foreach (var e in objects.added)
-        //     {
-        //         Debug.Log($"{e} was added!");
-        //     }
-        //
-        //     foreach (var e in objects.removed)
-        //     {
-        //         Debug.Log($"{e} was removed!");
-        //     }
-        // }
+        private readonly LiteNetLibNetwork network;
+
+        public DebugInputProcessor()
+        {
+            network = Layer.Get<LiteNetLibNetwork>();
+        }
 
         public void Tick(float dt)
         {
@@ -31,8 +25,8 @@ namespace Actors.PlayerInput
             )
             {
                 Debug.Log("spawn at "+hit.point);
-                var spawnCommand = Entity.Create().Set<SpawnCommand>();
-                spawnCommand.position = hit.point;
+                var spawnCommand = new SpawnCommand {position = hit.point};
+                network.Send(spawnCommand);
             }
         }
     }

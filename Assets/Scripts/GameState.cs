@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 [Serializable]
 public class GameState
 {
-    public long time;
-    public List<GameObject> selectedActors;
+    public uint tick;
+    public List<uint> selectedActors;
+    public List<GameObject> selectedActorsGameObjects;
+    public uint unitCount;
+
     public GameState()
     {
-       selectedActors = new List<GameObject>();
+        selectedActors = new List<uint>();
+        selectedActorsGameObjects = new List<GameObject>();
     }
 }

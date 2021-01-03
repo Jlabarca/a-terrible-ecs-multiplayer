@@ -6,7 +6,9 @@ namespace Actors.Components
  {
    public class UnitComponent
    {
-     public int Hp = 10;
+     public byte playerId;
+     public uint unitId;
+     public int health = 10;
    }
 
    #region HELPERS

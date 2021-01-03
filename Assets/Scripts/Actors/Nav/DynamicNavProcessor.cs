@@ -7,7 +7,7 @@ namespace Actors.Nav
     public class DynamicNavProcessor : Processor, ITick
     {
         private readonly Group<UnitComponent, NavigationComponent> units = default;
-        private GameState gameState;
+        private readonly GameState gameState;
         public DynamicNavProcessor()
         {
             gameState = Layer.Get<GameState>();

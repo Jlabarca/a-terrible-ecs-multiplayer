@@ -62,7 +62,7 @@ namespace Actors.PlayerInput
 					foreach (var actorEntity in _actors)
 					{
 						var unitComponent = actorEntity.Get<UnitComponent>();
-						if(unitComponent.Hp < 1) return;
+						if(unitComponent.health < 1) return;
 						Vector2 screenPos = Camera.main.WorldToScreenPoint(actorEntity.transform.position);
 						if(selectionRect.Contains(screenPos)) {
 							selectedActors.Add(actorEntity.transform.gameObject);
