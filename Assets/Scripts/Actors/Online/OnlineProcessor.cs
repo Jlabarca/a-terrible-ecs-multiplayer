@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Actors.Command;
 using Actors.Command.Components;
 using Lockstep.Core.Logic.Serialization;
@@ -39,7 +40,7 @@ namespace Actors.Online
 
             if(!Running) return;
             gameState.tick++;
-            //log.Info($"{UnityEngine.Time.realtimeSinceStartup} -  {gameState.tick}  - {Time.deltaTimeFixed} - {dt}");
+
             ExecuteCommand();
         }
 
@@ -51,6 +52,8 @@ namespace Actors.Online
 
                 if (networkMessage.PlayTick <= gameState.tick)
                 {
+                    log.Info($"Executing Input command: {gameState.tick} ServerTick: {networkMessage.Tick} PlayTick: {networkMessage.PlayTick}");
+
                     foreach (var command in networkMessage.Commands)
                     {
                         switch (command.Tag)
@@ -71,12 +74,12 @@ namespace Actors.Online
             }
         }
 
-        IEnumerator Start(Init init)
+        async void DelayedStart(Init init)
         {
             log.Info("InitStart");
             var time = init.StartTime / 1000f;
-            log.Info(time.ToString());
-            yield return Layer.WaitUnscaled(time);
+            log.Info("1");
+            await  Task.Delay(init.StartTime);
             log.Info(time.ToString());
             Running = true;
             log.Info("Started");
@@ -92,7 +95,7 @@ namespace Actors.Online
             switch (messageTag)
             {
                 case MessageTag.Ping:
-                    log.Info("Ping received");
+                    log.Debug("Ping received");
                     network.SendPing();
                     break;
                 case MessageTag.Init:
@@ -100,10 +103,11 @@ namespace Actors.Online
                     init.Deserialize(reader);
                     UnityEngine.Random.InitState(init.Seed);
                     log.Info($"{init.ActorID} Initializing in {init.StartTime} ms");
-                    Layer.Run(Start(init));
+                    DelayedStart(init);
                     break;
                 case MessageTag.Input:
                     var networkMessage = NetworkMessage.Deserialize(reader);
+                    log.Info($"Input received on ClientTick: {gameState.tick} ServerTick: {networkMessage.Tick} PlayTick: {networkMessage.PlayTick}");
                     localBuffer.Add(networkMessage);
                     break;
                 }

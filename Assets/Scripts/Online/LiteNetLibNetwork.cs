@@ -6,12 +6,16 @@ using Actors.Online;
 using LiteNetLib;
 using Lockstep.Core.Logic.Serialization;
 using Lockstep.Core.Logic.Serialization.Utils;
+using NLog;
 using Server.Common;
+using UnityEngine;
 
 namespace Online
 {
     public class LiteNetLibNetwork : INetwork
     {
+        static readonly NLog.Logger log = LoggerFactory.GetLogger(nameof(LiteNetLibNetwork));
+
         private readonly EventBasedNetListener listener = new EventBasedNetListener();
 
         private NetManager client;
@@ -69,6 +73,7 @@ namespace Online
 
         public void Send(ICommand command)
         {
+            log.Info($"Input {command.GetType().Name} sent on ClientTick: {gameState.tick}");
             Send(new NetworkMessage(gameState.tick, gameState.tick, 0, new List<ICommand> {command}));
         }
 
